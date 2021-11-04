@@ -3,7 +3,7 @@
 auto zapytaj(std :: string prompt) -> int
 {
 int n;
-std::cout << prompt<<": /n";
+std::cout << prompt<<": /n ";
 std::cin >>n;
 return n;
 }
