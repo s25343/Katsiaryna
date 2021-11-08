@@ -29,9 +29,12 @@ cout<<a<<" nie podchodzi"<<endl;
 if (czy(i))
          {
              sum += i;
+cout<<i<<endl;
+cout<<"sum= "<<sum<<endl;
          }
-}
-sum=sum-a-1;
           cout << "sum = " << sum << endl;
+}
     return 0;
 }
+
+
