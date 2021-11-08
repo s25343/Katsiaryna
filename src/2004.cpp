@@ -1,25 +1,28 @@
 #include <iostream>
 
 using namespace std;
-
+bool czy(int a)
+{
+    if (a<2)
+return false;
+for (int i=2; i*i<=a; i++)
+if (a%i==0)
+return false;
+return true;
+}
 
 int main()
 {
-    cout << "Podaj liczbe" << endl;
-    int a, b;
-    cin>>a;
-    {
-    if ((a==2) || (a==3) || (a==5) || (a==7))
-    {
-        cout <<"Podchodzi"<<endl;
-    }
-    else if ((a%2==0) || (a%3==0) || (a%5==0) || (a%7==0))
-    {
-        cout<<"Nie podchodzi"<<endl;
-    }
-    else{
-        cout <<"Podchodzi"<<endl;
-    }
-    }
-    return 0;
+int a;
+cout<<"Podaj liczbe"<<endl;
+cin>>a;
+if(czy(a))
+{
+cout<<a<<" podchodzi"<<endl;
+}
+else
+{
+cout<<a<<" nie podchodzi"<<endl;
+}
+return 0;
 }
