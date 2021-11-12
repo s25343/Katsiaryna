@@ -1,24 +1,33 @@
-#include<iostream>
-int main()
+#include <iostream>
+using namespace std;
+int main(int argc, char** argv)
 {
-int a;
-std::cout<<"Podaj numer "<<std::endl;
-std::cin>>a;
-if (a==1){
-std::cout<<" Poniadzialek"<<std::endl;}
-if (a==2){
-std::cout<<" Wtorek"<<std::endl;}
-if (a==3){
-std::cout<<" Sroda"<<std::endl;}
-if (a==4){
-std::cout<<" Czwartek"<<std::endl;}
-if (a==5){
-std::cout<<" Piatek"<<std::endl;}
-if (a==6){
-std::cout<<" Sobbota"<<std::endl;}
-if (a==7){
-std::cout<<" Niedzziela"<<std::endl;}
-return 0;
+	int b;
+	cout<<"podaj numer dnia "<<endl;
+	cin>>b;
+	switch (b)
+	{
+	case 1:
+		cout<<"Poniadzialek"<<endl;
+		break;
+		case 2:
+		cout<<"Wtorek"<<endl;
+		break;
+		case 3:
+		cout<<"Sroda"<<endl;
+		break;
+		case 4:
+		cout<<"Czwartek"<<endl;
+		break;
+		case 5:
+		cout<<"Piatek"<<endl;
+		break;
+		case 6:
+		cout<<"Sobota"<<endl;
+		break;
+		case 7:
+		cout<<"Niadziela"<<endl;
+		break;
 }
-
-zmienic na swich
+	return 0;
+}
