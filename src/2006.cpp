@@ -1,34 +1,66 @@
 #include <iostream>
 using namespace std;
-int main()
+
+int main(int argc, char** argv)
 {
-int a, b, c, x, max, min;
-cout<<"podaj a"<<endl;
-cin>>a;
-cout<<"podaj b"<<endl;
-cin>>b;
-cout<<"podaj c"<<endl;
-cin>>c;
-cout<<"podaj x"<<endl;
-cin>>x;
- if(a>b)
-   {
-    max = a;
-    min = b;
-   }
- else
-   {
-    max=b;
-    min=a;
-   }
-if (c>max)
-  max=c;
- else if (c<min)
-  min=c;
-  if (x>max)
-    max=x;
-    else
-    x=min;
-    cout<<"Najwielksza liczba to = "<<max<<endl;
-return 0;
+	int a,b,c,d,e;
+
+cout<<"podaj piec liczb"<<endl;
+cin>>a>>b>>c>>d>>e;
+
+if(a>b)
+{
+	cout<<a<<">"<<b<<endl;
 }
+else if(a<b)
+{
+	cout<<a<<"<"<<b<<endl;
+}
+else
+{
+	cout<<a<<"="<<b<<endl;
+}
+
+
+if(a>c)
+{
+	cout<<a<<">"<<c<<endl;
+}
+else if(a<c)
+{
+	cout<<a<<"<"<<c<<endl;
+}
+else
+{
+	cout<<a<<"="<<c<<endl;
+}
+
+
+if(a>d)
+{
+	cout<<a<<">"<<d<<endl;
+}
+else if(a<d)
+{
+	cout<<a<<"<"<<d<<endl;
+}
+else
+{
+	cout<<a<<"="<<d<<endl;
+}
+
+if(a>e)
+{
+	cout<<a<<">"<<e<<endl;
+}
+else if(a<e)
+{
+	cout<<a<<"<"<<e<<endl;
+}
+else
+{
+	cout<<a<<"="<<e<<endl;
+}
+	return 0;
+}
+
