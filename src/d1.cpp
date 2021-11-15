@@ -28,6 +28,8 @@ int main(int argc, char** argv)
 		case 7:
 		cout<<"Niadziela"<<endl;
 		break;
+			default: 
+cout<<"Nie podchodzi"<<endl;
 }
 	return 0;
 }
