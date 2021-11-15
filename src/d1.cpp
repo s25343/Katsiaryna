@@ -28,8 +28,8 @@ int main(int argc, char** argv)
 		case 7:
 		cout<<"Niadziela"<<endl;
 		break;
-			default: 
-cout<<"Nie podchodzi"<<endl;
+			default:
+cout<<"W tygodniu tylko 7 dni"<<endl;
 }
 	return 0;
 }
