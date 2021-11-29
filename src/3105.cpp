@@ -3,7 +3,7 @@ using namespace std;
 
 void asum(int n)
 {
-	int min=0;
+	int max=0;
 	int s=0;
 	int* a=new int[n];
 	for(int i=0;i<n;i++)
@@ -12,9 +12,9 @@ void asum(int n)
 		cin>>a[i];
 	}
 	for(int i=0;i<n;i++)
-	{if(min<a[i])
+	{if(max<a[i])
 		{
-			min=a[i];
+			max=a[i];
 			s=i;
 		}
 	}
