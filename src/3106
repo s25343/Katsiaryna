@@ -1,0 +1,36 @@
+#include <iostream>
+
+using namespace std;
+
+auto search(int a[], int n, int b) -> int
+{
+    int ind = 0;
+    for (int i = 0; i<n; i++)
+    {
+        if (b == a[i])
+        ind = i+1;
+        else
+        ind = -1;
+        
+    }
+    
+    return ind;
+    
+}
+
+int main()
+{
+    int b;
+    cout << "Jaka liczba? " << ' ';
+    cin >> b;
+    int a[10] = { 54,69,24,31,75,12,43,-1,52,9, };
+    int n = sizeof(a)/sizeof(a[10]);
+    if(search(a, n, b) == 0)
+    {
+        cout << "Poprawne!" << ' ';
+    }
+    else 
+    cout << search(a, n, b);
+    
+    return 0;
+}
