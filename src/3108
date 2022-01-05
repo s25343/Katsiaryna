@@ -1,0 +1,22 @@
+#include <iostream>
+#include <algorithm>
+
+using namespace std;
+
+auto sort_desc(int a[]) -> void
+{
+    for(int i=0; i<10; i++)
+        cout << a[i] << ' ';
+}
+
+int main()
+{
+    int a[10]={34, 16, 25, -1, 8, 26, 12, 18, 13, 21};
+    cout<<"przed: ";
+    sort_desc(a);
+    sort(a,a+10, greater <int>());
+    cout << endl;
+    cout<<"i po: ";
+    sort_desc(a);
+    return 0;
+}
