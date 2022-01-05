@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    string name;
+    double weight;
+    int height;
+    
+    cout << "Your name: " << ' ';
+    cin >> name;
+    cout << '\n';
+    
+     cout << "Your weight: " << ' ';
+    cin >> weight;
+    cout << endl;
+    
+     cout << "Your height: " << ' ';
+    cin >> height;
+    cout << "\n";
+    
+    return 0;
+    
+}
