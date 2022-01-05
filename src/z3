@@ -1,0 +1,28 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    string name;
+    string name1;
+    
+    cout << "First name: " << '\n';
+    cin >> name;
+    
+    
+    cout << "Second name: " << '\n';
+    cin >> name1;
+    
+    if(name.size()>name1.size())
+    cout << "First name longer than second !" << endl;
+    
+    if(name.size()<name1.size())
+    cout << "Second name longer than first ..." << endl;
+    
+    if(name.size()==name1.size())
+    cout << "Same ." << endl;
+    
+    return 0;
+    
+}
