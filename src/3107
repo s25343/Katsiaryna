@@ -1,0 +1,19 @@
+#include <iostream>
+#include <algorithm>
+using namespace std;
+auto sort_asc(int a[]) -> void
+{
+    for(int i=0; i<10; i++)
+        cout << a[i] << ' ';
+}
+int main()
+{
+    int a[10]={34, 16, 25, -1, 8, 26, 12, 18, 13, 21};
+    cout<<" przed: ";
+    sort_asc(a);
+    sort(a,a+10);
+    cout << endl;
+    cout<<" i po: ";
+    sort_asc(a);
+    return 0;
+}
