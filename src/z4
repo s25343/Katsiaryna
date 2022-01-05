@@ -1,0 +1,25 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+    string names[5];
+    int z=0, m=0;
+    cout << "Write 5 names: " << ' ';
+    
+    for (int i = 0; i < 5; i++)
+    cin >> names[i];
+    
+    for (int i=0; i<5; i++){
+        if(names[i].back()=='a')
+        z++;
+        
+        else 
+        m++;
+    }
+    cout << "Males: " << m << endl;
+    cout << "Females: " << z << endl;
+    return 0;
+}
