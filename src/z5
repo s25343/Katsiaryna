@@ -1,0 +1,28 @@
+#include <iostream>
+
+using namespace std;
+
+auto is_even(int a) -> bool
+{
+    if(a%2==0)
+    {
+        cout << "Prawda" << ' ';
+         return true;
+    }
+    else
+    {
+        cout << "Nie prawda " << ' ';
+        return false;
+    }
+}
+
+
+     int main()
+     {
+
+         int a;
+         cout << "Liczba" << "\n";
+         cin >> a;
+         cout << is_even(a) << "\n";
+         return 0;
+     }
