@@ -1,0 +1,28 @@
+#include <iostream> 
+
+using namespace std;
+
+int is_divisible(int a, int b)
+{
+   if(a%b==0) 
+      return true;
+   else
+      return false;
+}
+
+int main()
+{
+   int is_divisible(int a, int b);
+   int l, m, w;
+   cout<<"Podaj mianownik: ";
+   cin>>l;
+   cout<<"Podaj dzielnik: ";
+   cin>>m;
+
+   w=is_divisible(l, m); 
+   if(w==true) 
+      cout<<endl<<l<<" / "<<m;
+   else
+      cout<<endl<<l<<" !/ "<<m;
+   return 0;
+}
