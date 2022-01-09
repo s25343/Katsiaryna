@@ -1,0 +1,27 @@
+#include <iostream>
+#include <algorithm>
+
+using namespace std;
+ 
+string is_palindrome(string slowo)
+{
+    cout<<"Podaj slowo";
+    cin>>slowo;
+    string odwrocone = slowo; 
+    
+    reverse(odwrocone.begin(), odwrocone.end()); 
+ 
+    if (slowo == odwrocone) {
+        return "to palindrom";
+    }
+    else {
+        return "to nie palindrom";
+    }
+}
+int main()
+{
+    string slowo;
+    cout << is_palindrome(slowo);
+ 
+    return 0;
+}
