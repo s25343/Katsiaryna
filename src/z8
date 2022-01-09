@@ -1,0 +1,18 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+    string s;
+    
+    cout << "podaj slowo " << endl;
+    cin >> s;
+    
+    for (string::size_type i=0; i<s.size(); i=i+3)
+    cout << s[i] << " ";
+    
+    
+    return 0;
+}
