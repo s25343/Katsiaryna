@@ -1,0 +1,28 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int count(string s, char z)
+{
+ 
+    int ilerazy = 0;
+    for (int i=0;i<s.length();i++)
+        if (s[i] == z) 
+            ilerazy++;
+    return ilerazy;
+}
+
+int main()
+{
+    
+  
+    string s; 
+    cout << "Slowo: " << ' ';
+    cin>>s;
+    char z;
+    cout << "Litera: " << ' ';
+    cin>>z;
+    cout << "Ilosc: " << count(s, z) << endl;
+    return 0;
+}
