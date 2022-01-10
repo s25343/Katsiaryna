@@ -9,20 +9,21 @@ int is_divisible(int a, int b)
    else
       return false;
 }
-
+int is_even(int a)
+{
+        if(is_divisible(a, 2) == 1)
+        return true;
+        else
+        return false;
+}
 int main()
 {
-   int is_divisible(int a, int b);
-   int l, m, w;
-   cout<<"Podaj mianownik: ";
-   cin>>l;
-   cout<<"Podaj dzielnik: ";
-   cin>>m;
-
-   w=is_divisible(l, m); 
-   if(w==true) 
-      cout<<endl<<l<<" / "<<m;
-   else
-      cout<<endl<<l<<" !/ "<<m;
+   int licznik;
+        cout<<"Podaj licznik";
+        cin>>licznik;
+        cout<<is_even(licznik);
+        cout << "\n";
    return 0;
 }
+
+
