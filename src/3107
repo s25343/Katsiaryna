@@ -1,19 +1,30 @@
-#include <iostream>
-#include <algorithm>
+#include<iostream>
 using namespace std;
-auto sort_asc(int a[]) -> void
+
+int main ()
 {
-    for(int i=0; i<10; i++)
-        cout << a[i] << ' ';
-}
-int main()
-{
-    int a[10]={34, 16, 25, -1, 8, 26, 12, 18, 13, 21};
-    cout<<" przed: ";
-    sort_asc(a);
-    sort(a,a+10);
-    cout << endl;
-    cout<<" i po: ";
-    sort_asc(a);
-    return 0;
+  int a[10], n, i, c, t;
+  cout << "Wpisz ilosc liczb: \n";
+  cin >> n;
+  cout << "Wypisz liczby: \n";
+  for (i = 0; i < n; ++i)
+    cin >> a[i];
+
+  for (i = 1; i < n; ++i)
+    {
+      for (c = 0; c < (n - i); ++c)
+	if (a[c] > a[c + 1])
+	  {
+	    t = a[c];
+	    a[c] = a[c + 1];
+	    a[c + 1] = t;
+	  }
+    }
+
+  cout << "Posortowane licziy:" << ' ';
+  for (i = 0; i < n; ++i)
+    cout << ' ' << a[i];
+
+  return 0;
+
 }
