@@ -1,18 +1,22 @@
 #include<iostream>
+#include <ctime>
 using namespace std;
 
 int main ()
 {
-  int a[10], n, i, c, t;
-  cout << "Wpisz ilosc liczb: \n";
+    srand(time(nullptr));
+  int a[10], n, t;
+  cout << "Wpisz ilosc liczb: ";
   cin >> n;
-  cout << "Wypisz liczby: \n";
-  for (i = 0; i < n; ++i)
-    cin >> a[i];
+  cout << "liczby: ";
+  for (int i = 0; i < n; ++i){
+    a[i] = 5+rand()%(30-5+1);
+    cout << a[i] << ' ';
+  }
 
-  for (i = 1; i < n; ++i)
+  for (int i = 1; i < n; ++i)
     {
-      for (c = 0; c < (n - i); ++c)
+      for (int c = 0; c < (n - i); ++c)
 	if (a[c] > a[c + 1])
 	  {
 	    t = a[c];
@@ -20,11 +24,11 @@ int main ()
 	    a[c + 1] = t;
 	  }
     }
+    cout << endl;
 
   cout << "Posortowane licziy:" << ' ';
-  for (i = 0; i < n; ++i)
+  for (int i = 0; i < n; ++i)
     cout << ' ' << a[i];
 
   return 0;
-
 }
