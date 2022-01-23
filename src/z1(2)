@@ -1,0 +1,19 @@
+#include <iostream>
+#include <vector>
+#include <cmath>
+#include <algorithm>
+
+float average_of(std::vector<double> vec){
+    float sum=0;
+    for(int i=0; i<vec.size(); i++){
+        sum+=vec[i];
+    }
+    float avg = sum/vec.size();
+    return avg;
+}
+
+int main(){
+    auto numbers = std::vector<double>{1,2,3,4,5,6,7,8,9};
+    std::cout<<average_of(numbers)<<"\n";
+    return 0;
+}
